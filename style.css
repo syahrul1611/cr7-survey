@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 56, 56, 0.5) 0%,
+      rgba(0, 130, 135, 0.5) 22%,
+      rgba(0, 169, 203, 0.4990371148459384) 100%
+    ),
+    url(img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+#title {
+  text-align: center;
+  color: white;
+}
+
+#description {
+  color: white;
+  text-align: center;
+}
+
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px 40px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+}
+
+label,
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  display: block;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-top: 10px;
+}
+
+label[id="name-label"],
+label[id="email-label"],
+label[id="number-label"],
+label[id="dropdown-label"],
+label[id="honour-label"],
+label[id="year-label"],
+label[id="suggestion-label"] {
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+  margin-top: 10px;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-family: inherit;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: lightseagreen;
+  margin-top: 30px;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-family: inherit;
+}
+
+button:hover {
+  background-color: lightskyblue;
+}

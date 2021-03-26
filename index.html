@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristiano Ronaldo Survey</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo-cr7.png">
+</head>
+<body>
+
+        <h1 id="title">Cristiano Ronaldo Survey</h1>
+        <p id="description">Please fill the form, thank you.</p>
+
+        <form action="" id="survey-form">
+            <label id="name-label" for="name">
+                Name
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </label>
+            
+            <label id="email-label" for="email">
+                Email
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </label>
+
+            <label id="number-label" for="number">
+                Age
+                <input type="number" id="number" placeholder="How old are you" min="15" max="40">
+            </label>
+
+            <label id="year-label">
+                What year do you think Ronaldo played well?
+            </label>
+            <label for="0708">
+                <input id="0708" type="radio" name="honour" value="0708" checked>2007–2008
+            </label>
+            <label for="0913">
+                <input id="0913" type="radio" name="honour" value="0913">2009–2013
+            </label>
+            <label for="1718">
+                <input id="1718" type="radio" name="honour" value="1718">2017–2018
+            </label>
+            <label for="1819">
+                <input id="1819" type="radio" name="honour" value="1819">2018–2019
+            </label>
+            <label for="20pr">
+                <input id="20pr" type="radio" name="honour" value="20pr">2020–present
+            </label>
+
+            <label id="dropdown-label" for="dropdown">
+                Where do you prefer Ronaldo to be?
+                <select name="club select" id="dropdown">
+                    <option>Sporting CP</option>
+                    <option>Manchester United</option>
+                    <option>Real Madrid</option>
+                    <option>Juventus</option>
+                </select>
+            </label>
+
+            <label id="honour-label">
+                What is Ronaldo honour that make you like him?
+            </label>
+            <label for="bdr">
+                <input id="bdr" type="checkbox" name="honour" value="fifa-ballon-dor">FIFA Ballon d'Or
+            </label>
+            <label for="wpoy">
+                <input id="wpoy" type="checkbox" name="honour" value="fifa-world-player-of-the-year">FIFA World Player of the Year
+            </label>
+            <label for="gf">
+                <input id="gf" type="checkbox" name="honour" value="golden-foot">Golden Foot
+            </label>
+            <label for="samvp">
+                <input id="samvp" type="checkbox" name="honour" value="seriea-most-valuable-player">Serie A Most Valuable Player
+            </label>
+            <label for="wbtg">
+                <input id="wbtg" type="checkbox" name="honour" value="worlds-best-top-goal-gcorer-of-the-decade">IFFHS World's Best Top Goal Scorer of the Decade
+            </label>
+            <label for="lbf">
+                <input id="lbf" type="checkbox" name="honour" value="laliga-best-forward">La Liga Best Forward
+            </label>
+
+            <label id="suggestion-label" for="suggestion">
+                Any comments or suggestions?
+                <textarea id="suggestion" cols="30" rows="10"></textarea>
+            </label>
+
+            <button id="submit" type="submit">Submit</button>
+
+        </form>
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
